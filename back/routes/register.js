@@ -11,7 +11,7 @@ router.post('/register', async function (req, res, next) {
 
         const existingUser = await userCtrl.findByUsername(username)
         if (existingUser) {
-            return res.status(409).json({message: 'User already exits.'});
+            return res.status(409).json({message: 'User already registered.'});
         }
         const user = await userCtrl.registerUser({username, password})
         res.status(201).json({message: 'Account successfully created !'})
