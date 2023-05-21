@@ -1,15 +1,13 @@
 const express = require('express');
-const registerRoute = require('./routes/register')
-const loginRoute = require('./routes/login')
-const productCreateRoute = require('./routes/product')
+const userRoutes = require('./routes/user')
+const productsRoutes = require('./routes/product')
 var bodyParser = require('body-parser')
 const app = express();
 
 app.use(bodyParser.json());
 
-app.use('/api/auth', registerRoute)
-app.use('/api/auth', loginRoute)
-app.use('/api/product', productCreateRoute)
+app.use('/api/auth', userRoutes)
+app.use('/api/product', productsRoutes)
 
 // Démarrer le serveur
 app.listen(3000, () => {
