@@ -10,7 +10,7 @@ exports.findByUsername = username => {
   })
 }
 
-exports.registerUser = user => {
+async function registerUser(user) {
   user.password = bcrypt.hashSync(user.password, 12)
   return db.User.create({
       data: user
@@ -38,4 +38,4 @@ async function checkPassword(user, password) {
   }
 }
 
-module.exports = { findByUsername, checkPassword };
+module.exports = { findByUsername, checkPassword, registerUser };
