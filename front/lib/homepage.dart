@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'auth/register.dart';
 import 'auth/login.dart';
 import 'package:provider/provider.dart';
-import 'user_provider.dart';
+import 'user/user_provider.dart';
 import 'product/product_list_page.dart';
 
 class HomePage extends StatelessWidget {

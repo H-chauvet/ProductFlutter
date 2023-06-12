@@ -7,7 +7,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:myflutter/homepage.dart';
 import 'register.dart';
 import 'package:provider/provider.dart';
-import '../user_provider.dart';
+import '../user/user_provider.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});

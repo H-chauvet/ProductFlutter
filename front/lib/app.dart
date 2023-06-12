@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'homepage.dart';
 import 'package:provider/provider.dart';
-import 'user_provider.dart';
+import 'user/user_provider.dart';
 
 class EcommerceApp extends StatelessWidget {
   const EcommerceApp({super.key});
